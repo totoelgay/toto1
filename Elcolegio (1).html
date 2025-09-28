@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Colegio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+    }
+    header {
+      background: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background: green;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 { color: green; }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .foto {
+      width: 250px;
+      cursor: pointer;
+    }
+    .foto img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .info {
+      display: none;
+      background: #f2f2f2;
+      margin-top: 8px;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: left;
+    }
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>El Colegio</h1>
+  </header>
+
+  <nav>
+    <a href="elcolegio.html">El Colegio</a>
+    <a href="EventoImportante.html">Evento Importante</a>
+    <a href="amigos.html">Amigos</a>
+  </nav>
+
+  <main>
+    <h2>Nuestro Colegio</h2>
+    <p>Un lugar lleno de experiencias, aprendizajes y amistades que nos acompañarán siempre.</p>
+
+    <div class="galeria">
+      <!-- Foto 1 -->
+      <div class="foto" onclick="toggleInfo('info1')">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijW8ZOpot_S_gtCX8FrutfflkgaBV7rV-Z4M2wUGuAMkykozLGKRVUorWtCp6J7MJMOLLV0sPxAibRVMwhX7sTOzHI2obEJG0OZY9Rvzm21U7bnxGsNW9wq5pjNvTKvna1ePsaYzDnIXJYZsb95MUg5WCBk3GI95FWwzooL0V6g2XCINdVYJAZuw8dSg/s16000/Colegio%20Alberto%20Lleras.jpg">
+        <div id="info1" class="info">Aquí se ve la entrada principal de nuestro colegio.</div>
+      </div>
+
+      <!-- Foto 2 -->
+      <div class="foto" onclick="toggleInfo('info2')">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.PJ_kaCXzyApggvSlgfSHXgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <div id="info2" class="info">Este es el escudo de nuestra institución</div>
+      </div>
+
+      <!-- Foto 3 -->
+      <div class="foto" onclick="toggleInfo('info3')">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.oZB5EW3Vz5Jpxnm8KRkpeAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <div id="info3" class="info">Un aula representativa donde vivimos grandes momentos.</div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function toggleInfo(id) {
+      let box = document.getElementById(id);
+      box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+  </script>
+<main>
+    <h2>Información Adicional</h2>
+    <p>Inicio » Secretaría de Educación de Villavicencio » Institucion Educativa Alberto Lleras Camargo en Villavicencio – Meta
+
+Institucion Educativa Alberto Lleras Camargo en Villavicencio – Meta
+
+Institucion Educativa Alberto Lleras Camargo se sitúa en el municipio Villavicencio, departamento de Meta y pertenece a la zona Urbana, esta Institucion Educativa es administrada por la Secretaría de Educación de Villavicencio, cuyos niveles de educación son: Preescolar Escolarizado_, Programa Para Jóvenes en Extraedad Y Adultos, a Crecer, Educación Tradicional y forma parte del modelo educativo: Preescolar Escolarizado_, Programa Para Jóvenes en Extraedad Y Adultos, a Crecer, Educación Tradicional..</p>
+
+
+
+</body>
+</html>

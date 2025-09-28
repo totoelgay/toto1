@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Amigos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+    }
+    header {
+      background: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background: green;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 { color: green; }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .foto {
+      width: 250px;
+      cursor: pointer;
+    }
+    .foto img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .info {
+      display: none;
+      background: #f2f2f2;
+      margin-top: 8px;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: left;
+    }
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amigos</h1>
+  </header>
+
+  <nav>
+    <a href="elcolegio.html">El Colegio</a>
+    <a href="EventoImportante.html">Evento Importante</a>
+    <a href="amigos.html">Amigos</a>
+
+  </nav>
+
+  <main>
+    <h2>Mi Grupo de Amigos</h2>
+    <p>Las amistades con las cuales hicimos nuestro emprendimiento.</p>
+
+    <div class="galeria">
+      <!-- Foto 1 -->
+      <div class="foto" onclick="toggleInfo('info1')">
+        <img src="https://i.imgur.com/obeMHWI.jpeg" alt="Amigos 1">
+        <div id="info1" class="info">Aquí estamos compartiendo un día divertido en el laboratorio.</div>
+      </div>
+
+      <!-- Foto 2 -->
+      <div class="foto" onclick="toggleInfo('info2')">
+        <img src=""Amigos 2">
+        <div id="info2" class="info">Foto general del grupo.</div>
+      </div>
+
+      <!-- Foto 3 -->
+      <div class="foto" onclick="toggleInfo('info3')">
+        <img src="https://via.placeholder.com/250x150" alt="Amigos 3">
+        <div id="info3" class="info">Siempre juntos en los buenos y malos momentos.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Página creada por Duván</p>
+  </footer>
+
+  <script>
+    function toggleInfo(id) {
+      let box = document.getElementById(id);
+      box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
